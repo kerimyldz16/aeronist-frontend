@@ -1,0 +1,89 @@
+.grid-section {
+  padding: 4rem 5%;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.logo-title {
+  font-size: 1.8rem;
+  color: #00aaff;
+  margin-bottom: 1rem;
+}
+
+.logo-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.grid-item {
+  background-color: #2e2e2e;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.grid-item h3 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #00aaff;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.divider {
+  width: 50%;
+  height: 2px;
+  margin: 1rem auto;
+  background-color: #00aaff;
+  border: none;
+}
