@@ -5,6 +5,7 @@ import "../styles/Footer.css";
 function Footer() {
   return (
     <footer className="footer">
+      <hr className="divider-footer" />
       <div className="footer-links">
         <a href="https://www.instagram.com/aeronist/">
           <FaInstagram />
