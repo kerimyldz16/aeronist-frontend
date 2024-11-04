@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isAboutMenuOpen, setIsAboutMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +23,14 @@ function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const toggleAboutMenu = () => {
+    setIsAboutMenuOpen(!isAboutMenuOpen);
+  };
 
   return (
     <nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
       <div className="logo">
-        <a href="#home">Aeronist Aerospace</a>
+        <a href="/">Aeronist Aerospace</a>
       </div>
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
@@ -34,9 +38,6 @@ function Navbar() {
         </li>
         <li>
           <a href="projects">Faaliyetlerimiz</a>
-        </li>
-        <li>
-          <a href="#news">Haberler</a>
         </li>
         <li>
           <a href="#contact">İletişim</a>

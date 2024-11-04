@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/Slider.css";
-import img1 from "../assets/slide-img1.jpg";
+import img3 from "../assets/slide-img1.jpg";
 import img2 from "../assets/slide-img2.jpg";
-import img3 from "../assets/slide-img3.jpg";
+import img1 from "../assets/slide-img3.jpg";
 
 function SliderComponent() {
   const settings = {

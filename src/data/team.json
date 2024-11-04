@@ -1,0 +1,54 @@
+{
+  "management": [
+    {
+      "id": 1,
+      "name": "Kulüp Başkanı",
+      "title": "Kulüp Başkanı",
+      "image": "../assets/president.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Başkan Yardımcısı 1",
+      "title": "Başkan Yardımcısı",
+      "image": "../assets/vice_president_1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Başkan Yardımcısı 2",
+      "title": "Başkan Yardımcısı",
+      "image": "../assets/vice_president_2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mekanik Ekibi Lideri",
+      "title": "Mekanik Ekibi Lideri",
+      "image": "../assets/mechanic_lead.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Yazılım Ekibi Lideri",
+      "title": "Yazılım Ekibi Lideri",
+      "image": "../assets/software_lead.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sosyal Medya Yöneticisi",
+      "title": "Sosyal Medya Yöneticisi",
+      "image": ""
+    }
+  ],
+  "members": [
+    {
+      "id": 7,
+      "name": "Üye 1"
+    },
+    {
+      "id": 8,
+      "name": "Üye 2"
+    },
+    {
+      "id": 9,
+      "name": "Üye 3"
+    }
+  ]
+}

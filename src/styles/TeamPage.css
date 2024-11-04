@@ -1,0 +1,96 @@
+.team-section {
+  padding: 4rem 5%;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #00aaff;
+  margin-bottom: 2rem;
+}
+
+.team-hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.team-card {
+  background-color: #2e2e2e;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.member-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.member-placeholder {
+  background-color: #444;
+  color: #888;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.member-title {
+  font-size: 1.5rem;
+  color: #00aaff;
+  margin-top: 1rem;
+}
+
+.member-name {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.team-list {
+  margin-top: 4rem;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  color: #00aaff;
+  margin-bottom: 1rem;
+}
+
+.member-list {
+  list-style: none;
+  padding: 0;
+}
+
+.member-list-item {
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: #2e2e2e;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.delete-btn:hover {
+  background-color: #ff3333;
+}
