@@ -1,54 +1,165 @@
-{
-  "management": [
-    {
-      "id": 1,
-      "name": "Kulüp Başkanı",
-      "title": "Kulüp Başkanı",
-      "image": "../assets/president.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Başkan Yardımcısı 1",
-      "title": "Başkan Yardımcısı",
-      "image": "../assets/vice_president_1.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Başkan Yardımcısı 2",
-      "title": "Başkan Yardımcısı",
-      "image": "../assets/vice_president_2.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Mekanik Ekibi Lideri",
-      "title": "Mekanik Ekibi Lideri",
-      "image": "../assets/mechanic_lead.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Yazılım Ekibi Lideri",
-      "title": "Yazılım Ekibi Lideri",
-      "image": "../assets/software_lead.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Sosyal Medya Yöneticisi",
-      "title": "Sosyal Medya Yöneticisi",
-      "image": ""
-    }
-  ],
-  "members": [
-    {
-      "id": 7,
-      "name": "Üye 1"
-    },
-    {
-      "id": 8,
-      "name": "Üye 2"
-    },
-    {
-      "id": 9,
-      "name": "Üye 3"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "Ahmet Yılmaz",
+    "title": "Kulüp Başkanı",
+    "image": "../assets/ahmet.jpg",
+    "role": "management",
+    "level": 0
+  },
+  {
+    "id": 2,
+    "name": "Mehmet Demir",
+    "title": "Başkan Yardımcısı",
+    "image": "../assets/mehmet.jpg",
+    "role": "management",
+    "level": 1
+  },
+  {
+    "id": 3,
+    "name": "Ayşe Kaya",
+    "title": "Başkan Yardımcısı",
+    "image": "../assets/ayse.jpg",
+    "role": "management",
+    "level": 1
+  },
+  {
+    "id": 4,
+    "name": "Ali Çelik",
+    "title": "Mekanik E. Lideri",
+    "image": "../assets/ali.jpg",
+    "role": "management",
+    "level": 2
+  },
+  {
+    "id": 5,
+    "name": "Zeynep Er",
+    "title": "Yazılım Ekibi Lideri",
+    "image": "../assets/zeynep.jpg",
+    "role": "management",
+    "level": 2
+  },
+  {
+    "id": 6,
+    "name": "Fatma Güneş",
+    "title": "S. M. Yöneticisi",
+    "image": "../assets/fatma.jpg",
+    "role": "management",
+    "level": 3
+  },
+  {
+    "id": 7,
+    "name": "Emre Sarı",
+    "role": "member"
+  },
+  {
+    "id": 8,
+    "name": "Cemre Ak",
+    "role": "member"
+  },
+  {
+    "id": 9,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 10,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 11,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 12,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 13,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 14,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 15,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 16,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 17,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 18,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 19,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 20,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 21,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 22,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 23,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 24,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 25,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 26,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 27,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 28,
+    "name": "Cemal Kara",
+    "role": "member"
+  },
+  {
+    "id": 29,
+    "name": "Cemal Kara",
+    "role": "member"
+  }
+]

@@ -54,6 +54,14 @@
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.grid-item.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .grid-item:hover {
@@ -80,6 +88,7 @@
   line-height: 1.6;
   text-align: center;
 }
+
 .divider {
   width: 50%;
   height: 2px;

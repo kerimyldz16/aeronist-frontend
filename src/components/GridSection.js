@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/GridSection.css";
 import logo from "../assets/logo.jpg";
 import img1 from "../assets/grid-img1.jpg";
 import img2 from "../assets/grid-img2.jpg";
+
 function GridSection() {
+  useEffect(() => {
+    const gridItems = document.querySelectorAll(".grid-item");
+    const observerOptions = {
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        }
+      });
+    }, observerOptions);
+
+    gridItems.forEach((item) => {
+      observer.observe(item);
+    });
+  }, []);
+
   return (
     <section className="grid-section" id="about">
       <div className="logo-container">
