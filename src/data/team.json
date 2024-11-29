@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Ahmet Yılmaz",
     "title": "Kulüp Başkanı",
-    "image": "../assets/ahmet.jpg",
+    "image": "../assets/idef.jpg",
     "role": "management",
     "level": 0
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Mehmet Demir",
     "title": "Başkan Yardımcısı",
-    "image": "../assets/mehmet.jpg",
+    "image": "../assets/idef2.jpg",
     "role": "management",
     "level": 1
   },
@@ -46,11 +46,6 @@
     "image": "../assets/fatma.jpg",
     "role": "management",
     "level": 3
-  },
-  {
-    "id": 7,
-    "name": "Emre Sarı",
-    "role": "member"
   },
   {
     "id": 8,

@@ -1,0 +1,9 @@
+.timeline-section {
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  overflow: hidden;
+}
+.custom-timeline .card-title {
+  color: #ff6347 !important; /* İstediğiniz rengi buraya koyabilirsiniz */
+}

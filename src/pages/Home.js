@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import SliderComponent from "../components/Slider";
 import GridSection from "../components/GridSection";
 import GallerySection from "../components/GallerySection";
+import News from "../components/News";
 function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ function Home() {
       <SliderComponent />
       <GridSection />
       <GallerySection />
+      <News />
     </>
   );
 }

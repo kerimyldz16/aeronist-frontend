@@ -1,0 +1,69 @@
+.history-section {
+  background-color: #1a1a1a;
+  padding: 3rem 2rem;
+  color: #ffffff;
+}
+
+.section-title-h2 {
+  font-size: 2.5rem;
+  color: #00aaff;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.history-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  gap: 2rem;
+}
+
+.history-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.history-image {
+  flex: 1;
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.history-image-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.history-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.history-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+  width: 100%;
+}
+
+/* Responsive Styling: Ekran boyutu 768px'den küçük olduğunda */
+@media screen and (max-width: 768px) {
+  .history-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .history-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .history-text {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}

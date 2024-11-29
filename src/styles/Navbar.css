@@ -7,10 +7,16 @@
 .about-arrow.open {
   transform: rotate(180deg);
 }
+
 .navbar {
   width: 100%;
   padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #000;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-width: 5px;
+  border-color: #1a1a1a;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -19,11 +25,6 @@
   top: 0;
   left: 0;
   z-index: 100;
-  transition: background-color 0.3s ease;
-}
-
-.navbar-scrolled {
-  background-color: #000;
 }
 
 .navbar-container {
@@ -53,6 +54,16 @@
   display: flex;
   gap: 1.5rem;
   list-style: none;
+}
+
+.navbar-menu.open {
+  flex-direction: column;
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .menu-item {
@@ -90,6 +101,11 @@
   z-index: 10;
 }
 
+.about-options.mobile {
+  position: static;
+  margin-top: 1rem;
+}
+
 .menu-option {
   color: #ffffff;
   text-decoration: none;
@@ -110,15 +126,14 @@
   .navbar-menu {
     display: none;
     flex-direction: column;
-    background-color: #000;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    padding: 1rem 2rem;
   }
 
   .navbar-menu.open {
     display: flex;
+  }
+
+  .about-options {
+    position: static;
+    margin-top: 1rem;
   }
 }

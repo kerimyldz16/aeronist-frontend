@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../styles/Team.css";
 import teamData from "../data/team.json";
-
+import image from "../assets/enes.jpeg";
 function Team() {
-  const [team, setTeam] = useState(teamData);
+  const [team] = useState(teamData);
 
   const renderManagementTree = (members, level = 0) => {
     const currentLevelMembers = members.filter(
@@ -15,11 +15,7 @@ function Team() {
         {currentLevelMembers.map((member) => (
           <div key={member.id} className="team-card">
             {member.image ? (
-              <img
-                src={member.image}
-                alt={member.name}
-                className="team-card-img"
-              />
+              <img src={image} alt={member.name} className="team-card-img" />
             ) : (
               <div className="team-card-placeholder">No Image</div>
             )}
@@ -49,7 +45,7 @@ function Team() {
   return (
     <section className="team-section">
       <div className="management-container">
-        <h2 className="section-title">Yönetim Kadrosu</h2>
+        <h2 className="section-title-h2">Yönetim Kadrosu</h2>
         <div className="management-tree">
           {renderManagementTree(
             team.filter((member) => member.role === "management")
@@ -57,7 +53,7 @@ function Team() {
         </div>
       </div>
       <div className="members-container">
-        <h2 className="section-title">Üyelerimiz</h2>
+        <h2 className="section-title-h2">Üyelerimiz</h2>
         {renderMemberList(team)}
       </div>
     </section>

@@ -4,23 +4,24 @@ import "../styles/Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isAboutMenuOpen, setIsAboutMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".about-menu") && isAboutMenuOpen) {
+        setIsAboutMenuOpen(false);
+      }
+      if (!event.target.closest(".navbar-container") && isOpen) {
+        setIsOpen(false);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [isAboutMenuOpen, isOpen]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,7 +32,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
+    <nav className="navbar navbar-scrolled">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           Aeronist Aerospace
@@ -51,7 +52,7 @@ function Navbar() {
               </span>
             </button>
             {isAboutMenuOpen && (
-              <div className="about-options">
+              <div className={`about-options ${isOpen ? "mobile" : ""}`}>
                 <Link to="/history" className="menu-option">
                   Tarihçemiz
                 </Link>
@@ -61,12 +62,16 @@ function Navbar() {
               </div>
             )}
           </div>
-          <Link to="/projects" className="menu-item">
-            Projelerimiz
-          </Link>
-          <Link to="/contact" className="menu-item">
-            İletişim
-          </Link>
+          {(!isOpen || !isAboutMenuOpen) && (
+            <>
+              <Link to="/projects" className="menu-item">
+                Projelerimiz
+              </Link>
+              <Link to="/contact" className="menu-item">
+                İletişim
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>
