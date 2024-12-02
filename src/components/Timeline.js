@@ -22,7 +22,7 @@ function Timeline() {
   ];
 
   return (
-    <div style={{ width: "100%", height: "500px" }}>
+    <div className="timeline-section-alt">
       <Chrono
         items={items}
         mode="VERTICAL_ALTERNATING"
@@ -31,16 +31,16 @@ function Timeline() {
           secondary: "#1a1a1a",
           cardBgColor: "#2e2e2e",
           cardForeColor: "#ffffff",
+          titleColor: "#ffcc00",
           cardTitleColor: "#ffffff",
         }}
         slideShow
-        slideShowDuration={3500}
-        borderLessCards="true"
-        textDensity="LOW"
+        slideShowDuration={4000}
+        borderLessCards={true}
+        textDensity="LESS"
         highlightCardsOnHover
         disableToolbar
-        disableInteraction
-        enableLayoutSwitch="false"
+        disableInteraction={true}
       />
     </div>
   );

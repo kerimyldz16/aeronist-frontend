@@ -1,4 +1,3 @@
-// src/pages/Home.js
 import React from "react";
 import SliderComponent from "../components/Slider";
 import GridSection from "../components/GridSection";

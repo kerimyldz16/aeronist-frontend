@@ -1,6 +1,6 @@
 .projects-section {
   padding: 4rem 5%;
-  background-color: #1a1a1a;
+  background: linear-gradient(135deg, #1a1a1a, #333);
   color: #ffffff;
 }
 
@@ -10,13 +10,14 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  color: #00aaff;
+  color: #00d1ff;
+  text-shadow: 0 0 10px rgba(0, 209, 255, 0.5);
 }
 
 .section-description {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
   color: #cccccc;
 }
@@ -31,8 +32,8 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
   align-items: stretch;
   justify-items: center;
 }

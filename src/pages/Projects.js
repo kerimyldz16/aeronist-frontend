@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../styles/Projects.css";
 import projectsData from "../data/projects-data.json";
-import ProjectCard from "../components/ProjectCard.js";
-import ProjectModal from "../components/ProjectModal.js";
+import ProjectCard from "../components/ProjectCard";
+import ProjectModal from "../components/ProjectModal";
 
 function ProjectsPage() {
   const [selectedProject, setSelectedProject] = useState(null);

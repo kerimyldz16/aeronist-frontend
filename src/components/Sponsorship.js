@@ -33,7 +33,7 @@ const Sponsorship = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false, // Slider oklarını kaldırmak için
+    arrows: false,
     responsive: [
       {
         breakpoint: 768,
@@ -60,24 +60,27 @@ const Sponsorship = () => {
         Aeronist Aerospace Sponsorluk Dosyası <FaDownload />
       </a>
 
-      {/* Elmas Sponsorlarımız */}
       <div className="sponsor-categories">
         <h3>Elmas Sponsorlarımız</h3>
         <div className="elmas-sponsors desktop-only">
           {[elm1, elm2, elm3].map((sponsor, index) => (
-            <div key={index} className="sponsor-card">
-              <img src={sponsor} alt="Elmas Sponsor" className="sponsor-logo" />
+            <div key={index} className="sponsor-card no-bg">
+              <img
+                src={sponsor}
+                alt="Elmas Sponsor"
+                className="sponsor-logo small-logo"
+              />
             </div>
           ))}
         </div>
         <div className="mobile-only">
           <Slider {...sliderSettings}>
             {[elm1, elm2, elm3].map((sponsor, index) => (
-              <div key={index} className="sponsor-card">
+              <div key={index} className="sponsor-card no-bg">
                 <img
                   src={sponsor}
                   alt="Elmas Sponsor"
-                  className="sponsor-logo"
+                  className="sponsor-logo small-logo"
                 />
               </div>
             ))}
@@ -85,16 +88,15 @@ const Sponsorship = () => {
         </div>
       </div>
 
-      {/* Platin Sponsorlarımız */}
       <div className="sponsor-categories">
         <h3>Platin Sponsorlarımız</h3>
         <div className="platin-sponsors desktop-only">
           {[pla1, pla2].map((sponsor, index) => (
-            <div key={index} className="sponsor-card">
+            <div key={index} className="sponsor-card no-bg">
               <img
                 src={sponsor}
                 alt="Platin Sponsor"
-                className="sponsor-logo"
+                className="sponsor-logo small-logo"
               />
             </div>
           ))}
@@ -102,11 +104,11 @@ const Sponsorship = () => {
         <div className="mobile-only">
           <Slider {...sliderSettings}>
             {[pla1, pla2].map((sponsor, index) => (
-              <div key={index} className="sponsor-card">
+              <div key={index} className="sponsor-card no-bg">
                 <img
                   src={sponsor}
                   alt="Platin Sponsor"
-                  className="sponsor-logo"
+                  className="sponsor-logo small-logo"
                 />
               </div>
             ))}
@@ -114,11 +116,10 @@ const Sponsorship = () => {
         </div>
       </div>
 
-      {/* Altın ve Destekçilerimiz - Slider ile Gösterim */}
       <h3>Altın Sponsorlarımız</h3>
       <Slider {...sliderSettings}>
         {[alt1, alt2, alt3, alt4].map((sponsor, index) => (
-          <div key={index} className="sponsor-card">
+          <div key={index} className="sponsor-card no-bg">
             <img src={sponsor} alt="Sponsor" className="sponsor-logo" />
           </div>
         ))}
@@ -128,7 +129,7 @@ const Sponsorship = () => {
       <Slider {...sliderSettings}>
         {[des1, des2, des3, des4, des5, des6, des7, des8, des9].map(
           (sponsor, index) => (
-            <div key={index} className="sponsor-card">
+            <div key={index} className="sponsor-card no-bg">
               <img src={sponsor} alt="Destekçi" className="sponsor-logo" />
             </div>
           )

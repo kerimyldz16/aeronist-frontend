@@ -42,10 +42,10 @@
   {
     "id": 6,
     "name": "Fatma Güneş",
-    "title": "S. M. Yöneticisi",
+    "title": "Sosyal Medya Yöneticisi",
     "image": "../assets/fatma.jpg",
     "role": "management",
-    "level": 3
+    "level": 2
   },
   {
     "id": 8,

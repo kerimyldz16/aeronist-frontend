@@ -14,8 +14,8 @@ function SliderComponent() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     arrows: false,
     appendDots: (dots) => (
       <div
@@ -31,7 +31,7 @@ function SliderComponent() {
   };
 
   return (
-    <section className="slider">
+    <section className="slider-component">
       <Slider {...settings}>
         <div className="slide">
           <img src={img1} alt="Slide 1" className="slide-img" />

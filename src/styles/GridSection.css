@@ -1,6 +1,6 @@
 .grid-section {
   padding: 4rem 5%;
-  background-color: #1a1a1a;
+  background: linear-gradient(to bottom, #1a1a1a, #2e2e2e);
   color: #ffffff;
   text-align: center;
 }
@@ -17,82 +17,86 @@
   max-width: 200px;
   height: auto;
   margin-bottom: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
 }
 
 .logo-title {
-  font-size: 1.8rem;
-  color: #00aaff;
+  font-size: 2rem;
+  color: #00ffaa;
   margin-bottom: 1rem;
+  transition: color 0.3s ease;
 }
 
 .logo-description {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.8;
   max-width: 600px;
   margin: 0 auto;
+  transition: color 0.3s ease;
 }
 
 .section-title {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: stretch;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .grid-item {
-  background-color: #2e2e2e;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
 }
 
-.grid-item.fade-in {
+.grid-item.slide-in {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.grid-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.8s ease;
 }
 
 .grid-item img {
-  width: 100%;
+  width: 80%;
   border-radius: 1rem;
-  margin-bottom: 1.5rem;
-  max-height: 300px;
+  margin-bottom: 2rem;
+  max-height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .grid-item h3 {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  color: #00ffaa;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.grid-item:hover h3 {
   color: #00aaff;
 }
 
 .grid-item p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.8;
   text-align: center;
-}
-
-.divider {
-  width: 50%;
-  height: 2px;
-  margin: 1rem auto;
-  background-color: #00aaff;
-  border: none;
 }

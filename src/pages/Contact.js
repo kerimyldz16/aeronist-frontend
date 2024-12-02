@@ -1,4 +1,3 @@
-// src/pages/Contact.js
 import React from "react";
 import Sponsorship from "../components/Sponsorship";
 import ContactInfo from "../components/ContactInfo";

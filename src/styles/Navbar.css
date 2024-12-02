@@ -50,7 +50,7 @@
   display: none;
   background: none;
   border: none;
-  font-size: 2rem; /* Daha büyük simge */
+  font-size: 2rem;
   color: #ffffff;
   cursor: pointer;
 }
@@ -74,15 +74,15 @@
 .menu-item {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.3rem; /* Daha büyük font */
-  font-weight: 600; /* Daha kalın yazı */
+  font-size: 1.3rem;
+  font-weight: 600;
   transition: color 0.3s ease, font-weight 0.3s ease, font-size 0.3s ease;
   position: relative;
 }
 
 .menu-item:hover {
   color: #00aaff;
-  font-weight: 700; /* Hover durumunda daha kalın */
+  font-weight: 700;
 }
 
 .menu-item.active::after {
@@ -104,7 +104,7 @@
   background: none;
   border: none;
   color: #ffffff;
-  font-size: 1.3rem; /* Daha büyük font */
+  font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -132,7 +132,7 @@
   text-decoration: none;
   display: block;
   margin-bottom: 1rem;
-  font-size: 1.3rem; /* Daha büyük font */
+  font-size: 1.3rem;
   font-weight: 600;
   transition: color 0.3s ease, font-weight 0.3s ease;
   position: relative;

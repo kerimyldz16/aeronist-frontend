@@ -1,24 +1,36 @@
 import React from "react";
 import "../styles/ContactInfo.css";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactInfo = () => {
   return (
     <div className="contact-info-section">
       <h2 className="contact-section-title-h2">Bize Ulaşın</h2>
-      <p>
-        Email:{" "}
-        <a href="mailto:aeronistaerospace@gmail.com">
-          aeronistaerospace@gmail.com
-        </a>
-      </p>
-      <p>
-        Telefon: <a href="tel:+901234567890">+90 123 456 7890</a>
-      </p>
-      <p>
-        Aeronist Havacılık ve Uzay <br />
-        İstanbul Üniversitesi-Cerrahpaşa, Mühendislik Fakültesi B Blok, 34320
-        Avcılar/İstanbul, Türkiye
-      </p>
+      <div className="contact-info-card">
+        <div className="contact-detail">
+          <FaEnvelope className="contact-icon" />
+          <p>
+            Email:{" "}
+            <a href="mailto:aeronistaerospace@gmail.com">
+              aeronistaerospace@gmail.com
+            </a>
+          </p>
+        </div>
+        <div className="contact-detail">
+          <FaPhoneAlt className="contact-icon" />
+          <p>
+            Telefon: <a href="tel:+901234567890">+90 123 456 7890</a>
+          </p>
+        </div>
+        <div className="contact-detail">
+          <FaMapMarkerAlt className="contact-icon" />
+          <p>
+            Aeronist Havacılık ve Uzay <br />
+            İstanbul Üniversitesi-Cerrahpaşa, Mühendislik Fakültesi B Blok,
+            34320 Avcılar/İstanbul, Türkiye
+          </p>
+        </div>
+      </div>
       <div className="map-container">
         <iframe
           title="Aeronist Aerospace Map"

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/ProjectCard.css";
+
 function ProjectCard({ project, onClick }) {
   return (
     <div className="project-card" onClick={onClick}>

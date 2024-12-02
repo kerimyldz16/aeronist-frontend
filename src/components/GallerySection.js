@@ -11,9 +11,15 @@ function GallerySection() {
       <h2 className="section-title">Galeri</h2>
       <hr className="divider" />
       <div className="gallery-container">
-        <img src={img1} alt="Galeri Görseli 1" className="gallery-image" />
-        <img src={img2} alt="Galeri Görseli 2" className="gallery-image" />
-        <img src={img3} alt="Galeri Görseli 3" className="gallery-image" />
+        <div className="gallery-item">
+          <img src={img1} alt="Galeri Görseli 1" className="gallery-image" />
+        </div>
+        <div className="gallery-item">
+          <img src={img2} alt="Galeri Görseli 2" className="gallery-image" />
+        </div>
+        <div className="gallery-item">
+          <img src={img3} alt="Galeri Görseli 3" className="gallery-image" />
+        </div>
       </div>
     </section>
   );

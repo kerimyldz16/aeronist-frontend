@@ -1,4 +1,4 @@
-.slider {
+.slider-component {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
@@ -7,44 +7,49 @@
   margin: 0;
 }
 
-.slide {
+.slider-component .slide {
   height: 100vh;
   position: relative;
 }
 
-.slide-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0;
+.slider-component .slick-slide {
+  height: 100vh;
 }
 
-.slick-list,
-.slick-track,
-.slick-slide {
+.slider-component .slide-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0;
+  display: block;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slider-component .slide-img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.slider-component .slick-list,
+.slider-component .slick-track,
+.slider-component .slick-slide {
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden;
 }
 
-.slick-slide img {
-  display: block;
-  width: 100%;
-  height: 101%;
-  object-fit: cover;
-}
-
-.slick-dots {
+.slider-component .slick-dots {
   bottom: 20px;
   text-align: center;
 }
 
-.slick-dots li button:before {
-  font-size: 12px;
+.slider-component .slick-dots li button:before {
+  font-size: 14px;
   color: #ffffff;
   opacity: 0.75;
+  transition: color 0.3s ease;
 }
 
-.slick-dots li.slick-active button:before {
+.slider-component .slick-dots li.slick-active button:before {
   color: #00aaff;
 }

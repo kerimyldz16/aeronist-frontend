@@ -1,9 +1,33 @@
-.timeline-section {
-  margin-top: 5rem;
-  padding: 2rem;
-  background-color: #1a1a1a;
-  overflow: hidden;
+.timeline-section-alt {
+  padding: 4rem 2rem;
+  background: #1a1a1a;
+  color: #ffffff;
 }
+
 .custom-timeline .card-title {
-  color: #ff6347 !important; /* İstediğiniz rengi buraya koyabilirsiniz */
+  color: #ffcc00 !important;
+}
+
+.chrono-icons {
+  filter: drop-shadow(0 0 5px #00aaff);
+}
+
+.card-title:hover {
+  color: #00aaff;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
+}
+
+.chrono-cards {
+  background: #2e2e2e;
+  border-radius: 10px;
+}
+
+.chrono-cards .card-content {
+  color: #cccccc;
+}
+
+.chrono-timeline {
+  border-left: 2px solid #00aaff;
 }
