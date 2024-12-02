@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Team.css";
 import teamData from "../data/team.json";
-import image from "../assets/enes.jpeg";
+import image from "../assets/TeamPage/enes.jpeg";
 function Team() {
   const [team] = useState(teamData);
 

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "../styles/GridSection.css";
 import logo from "../assets/logo.jpg";
-import img1 from "../assets/grid-img1.jpg";
-import img2 from "../assets/grid-img2.jpg";
+import img1 from "../assets/HomePage/gallery/gallery1.jpg";
+import img2 from "../assets/HomePage/gallery/gallery2.jpg";
 
 function GridSection() {
   useEffect(() => {

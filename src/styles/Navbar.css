@@ -10,13 +10,8 @@
 
 .navbar {
   width: 100%;
-  padding: 1rem 2rem;
-  background-color: #000;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  border-width: 5px;
-  border-color: #1a1a1a;
+  padding: 1.5rem 2.5rem;
+  background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -25,6 +20,12 @@
   top: 0;
   left: 0;
   z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-container {
@@ -34,25 +35,29 @@
   width: 100%;
 }
 
-.navbar-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00aaff;
-  text-decoration: none;
+.navbar-logo-img {
+  margin-left: 0.5rem;
+  height: 80px;
+  transition: height 0.3s ease;
+}
+
+.navbar-logo-img.scrolled {
+  margin-left: 0.5rem;
+  height: 60px;
 }
 
 .menu-toggle {
   display: none;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem; /* Daha büyük simge */
   color: #ffffff;
   cursor: pointer;
 }
 
 .navbar-menu {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -63,17 +68,32 @@
   top: 100%;
   right: 0;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2.5rem;
 }
 
 .menu-item {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 1.3rem; /* Daha büyük font */
+  font-weight: 600; /* Daha kalın yazı */
+  transition: color 0.3s ease, font-weight 0.3s ease, font-size 0.3s ease;
+  position: relative;
 }
 
 .menu-item:hover {
   color: #00aaff;
+  font-weight: 700; /* Hover durumunda daha kalın */
+}
+
+.menu-item.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #00aaff;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
 }
 
 .about-menu {
@@ -84,7 +104,8 @@
   background: none;
   border: none;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.3rem; /* Daha büyük font */
+  font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -95,7 +116,7 @@
   top: 100%;
   left: 0;
   background-color: #000;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -103,19 +124,29 @@
 
 .about-options.mobile {
   position: static;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .menu-option {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  margin-bottom: 0.5rem;
-  transition: color 0.3s ease;
+  margin-bottom: 1rem;
+  font-size: 1.3rem; /* Daha büyük font */
+  font-weight: 600;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  position: relative;
 }
 
-.menu-option:hover {
-  color: #00aaff;
+.menu-option.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #00aaff;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -134,6 +165,6 @@
 
   .about-options {
     position: static;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/News.css";
-import idefImage1 from "../assets/idef.jpg";
-import idefImage2 from "../assets/idef2.jpg";
+import idefImage1 from "../assets/HomePage/News/idef.jpg";
+import idefImage2 from "../assets/HomePage/News/idef2.jpg";
 
 function News() {
   return (

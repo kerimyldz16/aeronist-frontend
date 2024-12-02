@@ -1,0 +1,24 @@
+.contact-info-section {
+  background-color: #1a1a1a;
+  padding: 0rem 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.map-container {
+  margin-top: 2rem;
+  border: 1px solid #00aaff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.contact-section-title-h2 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #00aaff;
+  text-align: center;
+}
+
+a:hover {
+  color: #007acc;
+}

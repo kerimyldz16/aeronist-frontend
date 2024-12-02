@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from "../components/Navbar";
-import Timeline from "../components/Timeline"; // Yeni eklenen Timeline bileşeni
-import "../styles/About.css";
-import image1 from "../assets/idef2.jpg";
-import image2 from "../assets/idef.jpg";
+import Timeline from "../components/Timeline";
+import "../styles/History.css";
+import image1 from "../assets/HomePage/News/idef.jpg";
+import image2 from "../assets/HomePage/News/idef2.jpg";
 
-function About() {
+function History() {
   const image1Ref = useRef(null);
   const image2Ref = useRef(null);
 
@@ -35,9 +34,8 @@ function About() {
 
   return (
     <>
-      <Navbar />
       <div className="history-section">
-        <h2 className="section-title-h2">Tarihçemiz</h2>
+        <h2 className="section-title-h2">Biz Kimiz?</h2>
 
         <div className="history-row">
           <img
@@ -77,4 +75,4 @@ function About() {
   );
 }
 
-export default About;
+export default History;

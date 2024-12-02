@@ -2,35 +2,35 @@
   {
     "id": 1,
     "name": "Roket Test Çalışmaları",
-    "image": "/gallery1.jpg",
+    "image": "/Projects-Image/gallery1.jpg",
     "description": "Aeronist Aerospace olarak, uzay araştırmaları için geliştirdiğimiz roket motorlarının testlerini gerçekleştiriyoruz. Bu testler sırasında roketin itiş gücü ve diğer teknik özellikleri analiz ediliyor. laskdfmaskdmas lasmdaskldmas lasmdaslkdmaskl alskdfmaslkdmas lasdmaslkdmas asldmasdkmlasdlkasdmkas lasdkmaskldmaskldmasdklasdkl laskmdaskldmaskldmaskldmaskldma asldmaskldaskldmasdklasdkmla laslmaslk kmas  mskn n nasfnaslfasdaskldnasldasmldaskmll laskdaskmldasldasmldasldmaskl lasdmaslkdmasdklasm sdaskjdnasdnasmdlkasm lasd asldmaskldmasdlaskm lasmdaskldmsaldasmdlkasmlk laksdmaslkdmaskldasmdaskldmaskl lasdmaslkdmaskldmaskldasmdklasm laskmdaskldmaskdsa",
     "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     "id": 2,
     "name": "Simülasyon Eğitimi",
-    "image": "/gallery2.jpg",
+    "image": "/Projects-Image/gallery2.jpg",
     "description": "Havacılık ve uzay mühendisliği öğrencileri için geliştirdiğimiz özel simülasyon eğitimleri ile gerçek zamanlı uçuş deneyimi sağlıyoruz. Bu eğitimler, öğrencilere temel uçuş bilgileri kazandırmayı amaçlıyor.",
     "videoUrl": "https://www.youtube.com/embed/3JZ_D3ELwOQ"
   },
   {
     "id": 3,
     "name": "Uydu Montaj ve Test Aşamaları",
-    "image": "/gallery3.jpg",
+    "image": "/Projects-Image/gallery3.jpg",
     "description": "Kendi geliştirdiğimiz küçük uydu prototiplerinin montaj ve test aşamalarını tamamlıyoruz. Bu süreçte kullanılan teknikler ve test prosedürleri ile gelecekteki uzay görevlerine yönelik hazırlık yapıyoruz.",
     "videoUrl": "https://www.youtube.com/embed/LXb3EKWsInQ"
   },
   {
     "id": 4,
     "name": "Yarışma Hazırlıkları",
-    "image": "/grid-img1.jpg",
+    "image": "/Projects-Image/idef.jpg",
     "description": "Üniversite öğrencileri ile birlikte katıldığımız uluslararası yarışmalara yönelik hazırlık süreçlerimizi tamamlıyoruz. Bu yarışmalar kapsamında geliştirdiğimiz yenilikçi projeler ile öncü rol üstlenmeyi amaçlıyoruz.",
     "videoUrl": "https://www.youtube.com/embed/tgbNymZ7vqY"
   },
   {
     "id": 5,
     "name": "Robotik Kol Geliştirme",
-    "image": "/grid-img2.jpg",
+    "image": "/Projects-Image/idef2.jpg",
     "description": "Uzay görevlerinde kullanılmak üzere geliştirdiğimiz robotik kolun prototip çalışmalarını tamamlıyoruz. Bu robotik kol, uzay araçları üzerinde bakım ve onarım yapabilecek şekilde tasarlanmıştır.",
     "videoUrl": "https://www.youtube.com/embed/V-_O7nl0Ii0"
   }
