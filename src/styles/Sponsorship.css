@@ -1,75 +1,67 @@
 .sponsorship-section {
-  background: linear-gradient(135deg, #1a1a1a, #282828);
-  padding: 4rem 3rem;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  padding: 4rem 2rem;
   color: #ffffff;
+  font-family: "Inter", "DM Sans", sans-serif;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+}
+
+.section-title-h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #00aaff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
 }
 
 .sponsorship-text {
-  font-size: 1.4rem;
-  margin-bottom: 3.5rem;
-  color: #e0e0e0;
-  font-weight: 400;
-  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
 }
 
 .download-button {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 2.5rem;
+  gap: 0.6rem;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
   background: linear-gradient(90deg, #00aaff, #007acc);
-  color: #ffffff;
+  color: white;
+  border-radius: 999px;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  margin-bottom: 4rem;
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease;
 }
 
 .download-button:hover {
   background: linear-gradient(90deg, #007acc, #00aaff);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
-  transform: translateY(-5px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-.sponsor-categories {
-  margin-top: 4rem;
-}
-
-h3 {
-  font-size: 2.2rem;
-  color: #00aaff;
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-}
-
+h3,
 .support {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #00aaff;
-  margin-top: 4rem;
-  margin-bottom: 2.5rem;
-  font-weight: bold;
+  margin: 2.5rem 0 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
 .sponsor-card {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  padding: 1.2rem;
-  margin: 1.5rem auto;
+  padding: 1rem;
+  margin: 1rem auto;
   width: 140px;
   height: 140px;
   background-color: transparent;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  overflow: hidden;
   pointer-events: none;
-  user-select: none;
 }
 
 .sponsor-logo {
@@ -78,90 +70,49 @@ h3 {
   object-fit: contain;
   background-color: white;
   padding: 10px;
-  border-radius: 10px;
-  aspect-ratio: 1 / 1;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+  border-radius: 12px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4));
   transition: filter 0.3s ease;
 }
 
 .sponsor-card:hover .sponsor-logo {
-  filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.5));
 }
 
-.elmas-sponsors .sponsor-card,
-.platin-sponsors .sponsor-card {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0.05)
-  );
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.elmas-sponsors .sponsor-card:hover,
-.platin-sponsors .sponsor-card:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.3);
-}
-
-.desktop-only {
-  display: flex;
-}
-
-.mobile-only {
-  display: none;
-}
-
-/* Küçük Ekranlar için Düzenlemeler */
+/* Responsive */
 @media screen and (max-width: 768px) {
-  .desktop-only {
-    display: none;
-  }
-  .mobile-only {
-    display: block;
-  }
-  .sponsor-card {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .sponsor-logo {
-    width: 100%;
-    height: auto;
-    max-height: 100px;
-    object-fit: contain;
-  }
-  h3,
-  .support {
-    font-size: 1.8rem;
-    word-wrap: break-word;
-    margin: 1.5rem 0;
-  }
-}
-
-/* Çok Küçük Ekranlar için Düzenlemeler */
-@media screen and (max-width: 480px) {
-  .sponsor-card {
-    width: 100px;
-    height: 100px;
-  }
-  .sponsor-logo {
-    width: 100%;
-    height: auto;
-    max-height: 80px;
-    object-fit: contain;
-  }
   h3,
   .support {
     font-size: 1.5rem;
-    word-wrap: break-word;
-    margin: 1rem 0;
+  }
+
+  .sponsor-card {
+    width: 110px;
+    height: 110px;
+  }
+
+  .sponsor-logo {
+    max-height: 90px;
+  }
+
+  .download-button {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sponsor-card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .sponsor-logo {
+    max-height: 75px;
+  }
+
+  h3,
+  .support {
+    font-size: 1.3rem;
   }
 }

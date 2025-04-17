@@ -1,12 +1,14 @@
 .project-card {
   background: #2e2e2e;
-  padding: 2rem;
-  border-radius: 1.5rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  max-width: 400px;
 }
 
 .project-card::before {
@@ -16,9 +18,10 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(0, 209, 255, 0.5), transparent 60%);
+  background: radial-gradient(circle, rgba(0, 209, 255, 0.25), transparent 70%);
   transition: all 0.5s ease;
   opacity: 0;
+  pointer-events: none;
 }
 
 .project-card:hover::before {
@@ -26,23 +29,25 @@
 }
 
 .project-card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.6);
 }
 
 .project-card-img {
   width: 100%;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
+  height: 220px;
   object-fit: cover;
-  height: 250px;
+  border-radius: 1rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .project-card-title {
-  font-size: 1.8rem;
-  color: #00d1ff;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-size: 1.6rem;
   text-align: center;
-  transition: color 0.3s ease;
+  color: #00d1ff;
+  letter-spacing: 0.5px;
 }
 
 .project-card:hover .project-card-title {

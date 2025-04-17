@@ -4,13 +4,13 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactInfo = () => {
   return (
-    <div className="contact-info-section">
+    <section className="contact-info-section">
       <h2 className="contact-section-title-h2">Bize Ulaşın</h2>
       <div className="contact-info-card">
         <div className="contact-detail">
           <FaEnvelope className="contact-icon" />
           <p>
-            Email:{" "}
+            <strong>Email:</strong> <br />
             <a href="mailto:aeronistaerospace@gmail.com">
               aeronistaerospace@gmail.com
             </a>
@@ -19,15 +19,16 @@ const ContactInfo = () => {
         <div className="contact-detail">
           <FaPhoneAlt className="contact-icon" />
           <p>
-            Telefon: <a href="tel:+905387350461">+90 538 735 04 61</a>
+            <strong>Telefon:</strong> <br />
+            <a href="tel:+905387350461">+90 538 735 04 61</a>
           </p>
         </div>
         <div className="contact-detail">
           <FaMapMarkerAlt className="contact-icon" />
           <p>
-            Aeronist Havacılık ve Uzay <br />
-            İstanbul Üniversitesi-Cerrahpaşa, Mühendislik Fakültesi B Blok,
-            34320 Avcılar/İstanbul, Türkiye
+            <strong>Adres:</strong> <br />
+            İstanbul Üniversitesi-Cerrahpaşa <br /> Mühendislik Fakültesi B Blok
+            <br /> 34320 Avcılar/İstanbul, Türkiye
           </p>
         </div>
       </div>
@@ -41,7 +42,7 @@ const ContactInfo = () => {
           loading="lazy"
         ></iframe>
       </div>
-    </div>
+    </section>
   );
 };
 

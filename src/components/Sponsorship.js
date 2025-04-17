@@ -25,6 +25,7 @@ import kologlu from "../assets/Sponsors/kologlu.jpg";
 import dinamik from "../assets/Sponsors/dinamik.jpg";
 import özdisan from "../assets/Sponsors/özdisan.png";
 import metatech from "../assets/Sponsors/metatech.jpg";
+
 const Sponsorship = () => {
   const sliderSettings = {
     dots: false,
@@ -52,21 +53,25 @@ const Sponsorship = () => {
   };
 
   return (
-    <div className="sponsorship-section">
+    <section className="sponsorship-section">
       <h2 className="section-title-h2">Sponsorluk</h2>
       <p className="sponsorship-text">
         Daha da iyisi, biz gelelim, yüz yüze görüşelim!
       </p>
       <a href={sponsorshipFile} className="download-button" download>
-        Aeronist Aerospace Sponsorluk Dosyası <FaDownload />
+        Sponsorluk Dosyamızı İndirin <FaDownload />
       </a>
 
       <h3>Destekçilerimiz</h3>
       <Slider {...sliderSettings}>
         {[filetto, ekom, wurthe, komp, özdisan, metatech].map(
           (sponsor, index) => (
-            <div key={index} className="sponsor-card no-bg">
-              <img src={sponsor} alt="Sponsor" className="sponsor-logo" />
+            <div key={index} className="sponsor-card">
+              <img
+                src={sponsor}
+                alt={`Sponsor ${index}`}
+                className="sponsor-logo"
+              />
             </div>
           )
         )}
@@ -90,12 +95,16 @@ const Sponsorship = () => {
           sora,
           vg,
         ].map((sponsor, index) => (
-          <div key={index} className="sponsor-card no-bg">
-            <img src={sponsor} alt="Destekçi" className="sponsor-logo" />
+          <div key={index} className="sponsor-card">
+            <img
+              src={sponsor}
+              alt={`Geçmiş Sponsor ${index}`}
+              className="sponsor-logo"
+            />
           </div>
         ))}
       </Slider>
-    </div>
+    </section>
   );
 };
 

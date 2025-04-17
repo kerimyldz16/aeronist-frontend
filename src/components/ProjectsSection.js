@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "../styles/Projects.css";
+import "../styles/ProjectsSection.css";
 import projectsData from "../data/projects-data.json";
 import ProjectCard from "../components/ProjectCard";
 import ProjectModal from "../components/ProjectModal";
 
-function Projects() {
+function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedYear, setSelectedYear] = useState("All");
@@ -18,10 +18,10 @@ function Projects() {
   };
 
   const years = [
-    "Yıl Seçin",
-    ...new Set(
-      projectsData.map((project) => project.year).sort((a, b) => b - a)
-    ),
+    { label: "Yıl Seçin", value: "All" },
+    ...Array.from(
+      new Set(projectsData.map((project) => project.year).sort((a, b) => b - a))
+    ).map((year) => ({ label: year, value: year })),
   ];
 
   const filteredProjects = projectsData.filter((project) => {
@@ -35,10 +35,10 @@ function Projects() {
   return (
     <section className="projects-section">
       <div className="projects-header">
-        <h2 className="section-title">Faaliyetlerimiz</h2>
+        <h2 className="section-title">Projelerimiz</h2>
         <p className="section-description">
-          Aeronist Aerospace olarak gerçekleştirdiğimiz faaliyetler ve projeler
-          hakkında daha fazla bilgi edinebilirsiniz.
+          Roketlerden insansız sistemlere kadar geliştirdiğimiz projeleri
+          inceleyin.
         </p>
         <hr className="divider" />
       </div>
@@ -56,9 +56,9 @@ function Projects() {
           onChange={(e) => setSelectedYear(e.target.value)}
           className="project-filter-dropdown"
         >
-          {years.map((year) => (
-            <option key={year} value={year}>
-              {year}
+          {years.map(({ label, value }) => (
+            <option key={value} value={value}>
+              {label}
             </option>
           ))}
         </select>
@@ -73,6 +73,7 @@ function Projects() {
           />
         ))}
       </div>
+
       {selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeModal} />
       )}
@@ -80,4 +81,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsSection;

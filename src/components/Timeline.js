@@ -41,26 +41,30 @@ function Timeline() {
   ];
 
   return (
-    <div className="timeline-section-alt">
-      <Chrono
-        items={items}
-        mode="VERTICAL_ALTERNATING"
-        theme={{
-          primary: "#00aaff",
-          secondary: "#1a1a1a",
-          cardBgColor: "#2e2e2e",
-          cardForeColor: "#ffffff",
-          titleColor: "#ffcc00",
-          cardTitleColor: "#ffffff",
-        }}
-        slideShow
-        slideShowDuration={4000}
-        borderLessCards={true}
-        textDensity="LESS"
-        disableToolbar
-        disableInteraction={true}
-      />
-    </div>
+    <section className="timeline-section">
+      <h2 className="timeline-title">Kulüp Başarıları</h2>
+      <hr className="timeline-divider" />
+      <div className="timeline-wrapper">
+        <Chrono
+          items={items}
+          mode="VERTICAL_ALTERNATING"
+          theme={{
+            primary: "#00aaff",
+            secondary: "#1a1a1a",
+            cardBgColor: "#2e2e2e",
+            cardForeColor: "#ffffff",
+            titleColor: "#ffcc00",
+            cardTitleColor: "#ffffff",
+          }}
+          slideShow
+          slideShowDuration={5000}
+          borderLessCards
+          textDensity="COMFORTABLE"
+          disableToolbar
+          disableAutoScrollOnClick
+        />
+      </div>
+    </section>
   );
 }
 

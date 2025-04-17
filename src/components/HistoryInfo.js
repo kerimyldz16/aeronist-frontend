@@ -9,36 +9,31 @@ function HistoryInfo() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (image1Ref.current) {
-        const rect1 = image1Ref.current.getBoundingClientRect();
-        if (rect1.top < window.innerHeight) {
-          image1Ref.current.classList.add("history-image-visible");
+      [image1Ref, image2Ref].forEach((ref) => {
+        if (ref.current) {
+          const rect = ref.current.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            ref.current.classList.add("visible");
+          }
         }
-      }
-      if (image2Ref.current) {
-        const rect2 = image2Ref.current.getBoundingClientRect();
-        if (rect2.top < window.innerHeight) {
-          image2Ref.current.classList.add("history-image-visible");
-        }
-      }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <>
-      <div className="history-section">
-        <h2 className="section-title-h2">Biz Kimiz?</h2>
+    <section className="historyinfo-section" id="history">
+      <h2 className="historyinfo-title">Kulüp Tarihçemiz</h2>
+      <hr className="historyinfo-divider" />
 
-        <div className="history-row">
-          <div className="history-text">
-            <h3 className="history-text-title">İlk Adımlarımız</h3>
+      <div className="historyinfo-block">
+        <div className="historyinfo-column">
+          <div className="historyinfo-text">
+            <h3>İlk Adımlarımız</h3>
             <p>
               2018 yılında çeşitli dallardan bir grup mühendislik öğrencisi
               tarafından, İstanbul Üniversitesi-Cerrahpaşa Mühendislik Fakültesi
@@ -52,17 +47,21 @@ function HistoryInfo() {
               sağlamak için çalışmalarımıza kararlılıkla devam ediyoruz.
             </p>
           </div>
+        </div>
+        <div className="historyinfo-column">
           <img
-            src={image1}
-            alt="Aeronist Tarihçe 1"
-            className="history-image"
             ref={image1Ref}
+            src={image1}
+            alt="Aeronist Kuruluş"
+            className="historyinfo-image"
           />
         </div>
+      </div>
 
-        <div className="history-row history-row-reverse">
-          <div className="history-text">
-            <h3 className="history-text-title">Başarılarla Dolu Yıllar</h3>
+      <div className="historyinfo-block reverse">
+        <div className="historyinfo-column">
+          <div className="historyinfo-text">
+            <h3>Başarılarla Dolu Yıllar</h3>
             <p>
               Kuruluşumuzdan bu yana gökyüzüne ve ötesine uzanan bir yolculuğun
               içindeyiz. "Gökyüzü sınır değil başlangıçtır." mottosunu her daim
@@ -80,18 +79,20 @@ function HistoryInfo() {
               gururuyla, büyük bir adım atıyoruz. Azim ve takım ruhuyla
               çıktığımız bu yolda, büyük bir aile samimiyetiyle çalışmalarımıza
               devam ederek ülkemizi en iyi şekilde temsil etmeye ve teknolojiyi
-              ileri taşımaya devam edeceğiz.
+              ileri taşımaya devam edeceğiz.{" "}
             </p>
           </div>
+        </div>
+        <div className="historyinfo-column">
           <img
-            src={image2}
-            alt="Aeronist Tarihçe 2"
-            className="history-image"
             ref={image2Ref}
+            src={image2}
+            alt="Aeronist Başarılar"
+            className="historyinfo-image"
           />
         </div>
       </div>
-    </>
+    </section>
   );
 }
 
