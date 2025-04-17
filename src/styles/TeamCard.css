@@ -1,0 +1,181 @@
+.team-section {
+  background-color: #1a1a1a;
+  padding: 4rem 2rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.section-title-h2 {
+  font-size: 2.5rem;
+  color: #00aaff;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.team-scroll-row {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 2rem 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.team-scroll-row::-webkit-scrollbar {
+  display: none;
+}
+.team-scroll-wrapper {
+  position: relative;
+}
+
+.team-card {
+  flex: 0 0 320px;
+  background-color: rgba(50, 50, 50, 0.85);
+  border-radius: 12px;
+  padding: 1.5rem;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 170, 255, 0.3);
+}
+
+.team-title {
+  font-size: 1.4rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.team-captain {
+  background-color: #2c2c2c;
+  border-left: 4px solid #00aaff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.captain-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.captain-duty {
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+.captain-mail a {
+  font-size: 0.9rem;
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.member-card {
+  background-color: #292929;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.member-card:hover {
+  background-color: #333;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.member-duty {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.team-scroll-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-scroll-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem 0.5rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.team-scroll-row::-webkit-scrollbar {
+  display: none;
+}
+
+.team-scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 170, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.team-scroll-button:hover {
+  background-color: rgba(0, 170, 255, 1);
+}
+
+.team-scroll-button.left {
+  left: -20px;
+}
+
+.team-scroll-button.right {
+  right: -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .team-section {
+    padding: 3rem 1rem;
+  }
+
+  .team-card {
+    flex: 0 0 85%;
+    padding: 1.2rem;
+  }
+  .team-scroll-button {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .team-scroll-button.left {
+    left: -10px;
+  }
+
+  .team-scroll-button.right {
+    right: -10px;
+  }
+}

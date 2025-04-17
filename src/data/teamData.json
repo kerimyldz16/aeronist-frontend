@@ -1,0 +1,310 @@
+[
+  {
+    "teamName": "AERONIST AEROSPACE ORTA İRTİFA ROKET TAKIMI",
+    "captain": {
+      "name": "Elif Çin",
+      "duty": "Genel Kaptan & Aviyonik Lideri",
+      "mail": "elifcinn28@gmail.com"
+    },
+    "members": [
+      {
+        "name": "Fatma Karagöz",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Samet Büyüm",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Necati Selim Ballıpınar",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Ravza İpek",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Halil Sarıkaya",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Muhammed Melik demirel",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Bilal Ciğerci",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Hakan Çakmakcı",
+        "duty": "Mekanik Lideri"
+      },
+      {
+        "name": "Sena Gül",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Recep Yazıcı",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Sıla Nur Saatci",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Rukiye Kayacan",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Hatice Elanur Albayrak",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Esmanur Tayfur",
+        "duty": "Mekanik"
+      }
+    ]
+  },
+  {
+    "teamName": "Aeronist SkyPulse HAVA SAVUNMA SİSTEMLERİ TAKIMI",
+    "captain": {
+      "name": "Öykü İlkem Gürten",
+      "duty": "Takım Kaptanı",
+      "mail": "oykuilkem@gmail.com"
+    },
+    "members": [
+      {
+        "name": "Şevval Sıla Parlak",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Furkan Topçu",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Yasemin Feride Öztürk",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Yasemin Şahin",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Denizcan Özcan",
+        "duty": "Yazılım Lideri"
+      },
+      {
+        "name": "Mert Kocaoğlu",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Yusuf Emre Gözcü",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Abdülkerim Yıldız",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Melike İşeri",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Abdullah Yıldız",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Feyza Nur Ustaoğlu",
+        "duty": "Mekanik Lideri"
+      },
+      {
+        "name": "Doruk Kurgan",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "İklim Ünlü",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Zeynep Tüvana Erarslan",
+        "duty": "Mekanik"
+      }
+    ]
+  },
+  {
+    "teamName": "ÇGM KARAN UAV SAVAŞAN İHA TAKIMI",
+    "captain": {
+      "name": "Miraç Karaburun",
+      "duty": "Takım Kaptanı",
+      "mail": "mirackaraburun@gmail.com"
+    },
+    "members": [
+      {
+        "name": "Amine Bağ",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Yakup Elveren",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Yusuf Sitil",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "İbrahim Emre Gürbüz",
+        "duty": "Donanım Lideri"
+      },
+      {
+        "name": "Abdurrahman Ufuk Çelikel",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Ahmet Can Kalkan",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Recep Sağlam",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Beyza Dursun",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Oğuzhan Gün",
+        "duty": "Yazılım Lideri"
+      },
+      {
+        "name": "Esra Nur Yiğit",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Yahya Çakır",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Biray Doksöz",
+        "duty": "Yazılım"
+      }
+    ]
+  },
+  {
+    "teamName": "GÖK-HAN \nIREC 10K COTS ROCKET TEAM",
+    "captain": {
+      "name": "Enes Balçın",
+      "duty": "Takım Kaptanı",
+      "mail": "enesbalcin61@gmail.com"
+    },
+    "members": [
+      {
+        "name": "Hatice Nur Ayaş",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Mehmet Mutu",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Miraç Karaburun",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Muhammet Erdem Güldoğan",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Selman Bayraktar",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Recep Sağlam",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Nurettin Halit Alacahan",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Oğuzhan Çetin",
+        "duty": "Donanım"
+      },
+      {
+        "name": "Yahya Çakır",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Nouman Nteli Impraim",
+        "duty": "Yazılım"
+      },
+      {
+        "name": "Suğra Naz Uzunosmanoğlu",
+        "duty": "Sponsorluk"
+      }
+    ]
+  },
+  {
+    "teamName": "ÇGM TALAY SU ALTI ROKET TAKIMI",
+    "captain": {
+      "name": "Elif Özkul",
+      "duty": "Takım Kaptanı",
+      "mail": "elozk41@gmail.com"
+    },
+    "members": [
+      {
+        "name": "Zeynep Sena Manay",
+        "duty": "Elektronik Lideri"
+      },
+      {
+        "name": "Zeynep Özen",
+        "duty": "Elektronik"
+      },
+      {
+        "name": "Yasin Zeybek",
+        "duty": "Elektronik"
+      },
+      {
+        "name": "Berat Yetiş",
+        "duty": "Elektronik"
+      },
+      {
+        "name": "Güray Ergün",
+        "duty": "Elektronik"
+      },
+      {
+        "name": "İsmail Karaynir",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "Osman Kemal Göçen",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "İbrahim Koç",
+        "duty": "Mekanik"
+      },
+      {
+        "name": "İpek Çakır",
+        "duty": "Mekanik"
+      }
+    ]
+  },
+  {
+    "teamName": "Sosyal Medya Ekibi",
+    "captain": {
+      "name": "Havin Naz Bakırcıoğlu",
+      "duty": "Sosyal Medya Ekip Lideri",
+      "mail": "greop59@gmail.com"
+    },
+    "members": [
+      {
+        "name": "Ahmet Yasin Bilik",
+        "duty": "Sosyal Medya"
+      },
+      {
+        "name": "İrem Arslan",
+        "duty": "Sosyal Medya"
+      }
+    ]
+  }
+]

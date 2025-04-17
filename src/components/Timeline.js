@@ -4,20 +4,39 @@ import "../styles/Timeline.css";
 
 function Timeline() {
   const items = [
-    { title: "2018", cardTitle: "AERONIST KULÜBÜ KURULDU" },
+    {
+      title: "2018",
+      cardTitle: "Teknofest Alçak İrtifa Yarışmasında 2.lik elde ettik.",
+    },
     {
       title: "2019",
-      cardTitle: "TEKNOFEST 2019 YÜKSEK İRTİFA YARIŞMASINDA 4. OLDUK",
+      cardTitle:
+        "Teknofest Alçak İrtifa ve Yüksek İrtifa Yarışmalarında finale çıkmaya hak kazandık.",
     },
     {
       title: "2020",
-      cardTitle: "TEKNOFEST 2020 ALÇAK İRTİFA YARIŞMASINDA 3. OLDUK",
+      cardTitle:
+        "Teknofest Alçak İrtifa 4.lüğü elde ederken Orta İrtifa Final aşamasına çıkmaya hak kazandık.",
     },
-    { title: "2021", cardTitle: "100 KİŞİLİK BİR AİLE OLDUK" },
-    { title: "2022", cardTitle: "YENİ ALÇAK İRTİFA ROKETİMİZ VEKTÖR - A" },
+    {
+      title: "2021",
+      cardTitle:
+        "Teknofest Yüksek İrtifa Roket Yarışmasında Finalist olduk. Uluslararası IHA Yarışmasına katıldık.",
+    },
+    {
+      title: "2022",
+      cardTitle:
+        "Teknofest Yüksek İrtifa Roket Yarışmasında 4.lük elde ettik. Uluslararası IHA Yarışmasına katıldık.",
+    },
+    {
+      title: "2023",
+      cardTitle:
+        "Teknofest Yüksek İrtifa ve Orta İrtifa Yarışmalarına katıldık. Uluslararası IHA Yarışmasına katıldık.",
+    },
     {
       title: "2024",
-      cardTitle: "İHA - SİHA VE HSS KATEGORİLERİNDE YARIŞMALARA KATILDIK",
+      cardTitle:
+        "Teknofest Yüksek İrtifa Roket Yarışmasında 3.lük elde ettik ve Orta İrtifa Roket Yarışmasında finalist olduk. Uluslararası IHA Yarışmasına katıldık.",
     },
   ];
 
@@ -38,7 +57,6 @@ function Timeline() {
         slideShowDuration={4000}
         borderLessCards={true}
         textDensity="LESS"
-        highlightCardsOnHover
         disableToolbar
         disableInteraction={true}
       />

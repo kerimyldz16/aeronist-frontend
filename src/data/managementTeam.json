@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Enes Balçın",
+    "title": "Kulüp Başkanı",
+    "image": "/assets/ManagementTeam/enes.jpg",
+    "mail": "enesbalcin61@gmail.com",
+    "role": "management",
+    "level": 0
+  },
+  {
+    "id": 2,
+    "name": "Elif Çin",
+    "title": "Başkan Yardımcısı",
+    "image": "/assets/ManagementTeam/elif.jpg",
+    "mail": "elifcinn28@gmail.com",
+    "role": "management",
+    "level": 1
+  },
+  {
+    "id": 3,
+    "name": "Recep Sağlam",
+    "title": "Yönetim Kurulu Üyesi",
+    "image": "/assets/ManagementTeam/recep.jpg",
+    "mail": "recepsaglam404@gmail.com",
+    "role": "management",
+    "level": 2
+  },
+  {
+    "id": 4,
+    "name": "Nurettin Halit Alacahan",
+    "title": "Yönetim Kurulu Üyesi",
+    "image": "/assets/ManagementTeam/halit.jpg",
+    "mail": "halitalacahan@gmail.com",
+    "role": "management",
+    "level": 2
+  },
+  {
+    "id": 5,
+    "name": "Yahya Çakır",
+    "title": "Yönetim Kurulu Üyesi",
+    "image": "/assets/ManagementTeam/yahya.jpg",
+    "mail": "yahyacakir@gmail.com ",
+    "role": "management",
+    "level": 2
+  },
+  {
+    "id": 6,
+    "name": "Öykü İlkem Gürten",
+    "title": "Denetleme Kurulu Başkanı",
+    "image": "/assets/ManagementTeam/oyku.jpg",
+    "mail": "oyku.ilkem@gmail.com",
+    "role": "council",
+    "level": 1
+  },
+  {
+    "id": 7,
+    "name": "Hakan Çakmakci",
+    "title": "Denetleme Kurulu Üyesi",
+    "image": "/assets/ManagementTeam/hakan.jpg",
+    "mail": "hakan.11cakmakci@gmail.com",
+    "role": "council",
+    "level": 2
+  },
+  {
+    "id": 8,
+    "name": "Denizcan Özcan",
+    "title": "Denetleme Kurulu Üyesi",
+    "image": "/assets/ManagementTeam/deniz.jpg",
+    "mail": "20denizcan04@gmail.com ",
+    "role": "council",
+    "level": 2
+  }
+]

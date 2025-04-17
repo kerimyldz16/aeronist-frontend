@@ -1,0 +1,93 @@
+.announcements-section {
+  padding: 4rem 5%;
+  background: linear-gradient(to bottom, #1a1a1a, #1e1e1e);
+  color: #f1f1f1;
+  font-family: "DM Sans", "Inter", sans-serif;
+  text-align: center;
+}
+
+.announcements-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.4rem;
+  color: #f2f2f2;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.announcements-divider {
+  width: 60px;
+  height: 3px;
+  background-color: #886d03;
+  border: none;
+  margin: 1rem auto 3rem;
+}
+
+.announcements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.announcement-card {
+  background-color: #262626;
+  border-left: 5px solid #886d03;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.announcement-card.expanded {
+  max-height: 500px;
+  background-color: #2e2e2e;
+  box-shadow: 0 6px 18px rgba(136, 109, 3, 0.2);
+}
+
+.announcement-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(136, 109, 3, 0.25);
+}
+
+.announcement-card h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  color: #f8f8f8;
+  margin-bottom: 0.5rem;
+}
+
+.announcement-date {
+  font-size: 0.9rem;
+  color: #cfcfcf;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.announcement-content {
+  font-size: 1.05rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  transition: max-height 0.3s ease;
+}
+
+.announcements-footer {
+  margin-top: 2.5rem;
+}
+
+.view-all-link {
+  color: #886d03;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+  color: #cfae32;
+}

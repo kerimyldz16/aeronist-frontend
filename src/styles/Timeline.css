@@ -6,17 +6,11 @@
 
 .custom-timeline .card-title {
   color: #ffcc00 !important;
+  pointer-events: none;
 }
 
 .chrono-icons {
   filter: drop-shadow(0 0 5px #00aaff);
-}
-
-.card-title:hover {
-  color: #00aaff;
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
 }
 
 .chrono-cards {
@@ -26,8 +20,4 @@
 
 .chrono-cards .card-content {
   color: #cccccc;
-}
-
-.chrono-timeline {
-  border-left: 2px solid #00aaff;
 }

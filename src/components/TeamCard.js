@@ -1,71 +1,102 @@
-import React, { useState } from "react";
-import "../styles/Team.css";
-import teamData from "../data/team.json";
-import image from "../assets/TeamPage/enes.jpeg";
+import React, { useRef, useState, useEffect } from "react";
+import "../styles/TeamCard.css";
+
+import teamData from "../data/teamData.json";
 
 function TeamCard() {
-  const [team] = useState(teamData);
+  const scrollRef = useRef(null);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(false);
 
-  const renderManagementTree = (members, level = 0) => {
-    const currentLevelMembers = members.filter(
-      (member) => member.level === level
-    );
+  useEffect(() => {
+    const element = scrollRef.current;
 
-    return (
-      <>
-        {currentLevelMembers.length > 0 && (
-          <div className="hierarchy-level" key={`level-${level}`}>
-            {currentLevelMembers.map((member) => (
-              <div key={member.id} className="team-card">
-                {member.image ? (
-                  <img
-                    src={image}
-                    alt={member.name}
-                    className="team-card-img"
-                  />
-                ) : (
-                  <div className="team-card-placeholder">No Image</div>
-                )}
-                <h3 className="team-card-title">{member.title}</h3>
-                <p className="team-card-name">{member.name}</p>
-              </div>
-            ))}
-          </div>
-        )}
-        {members.some((member) => member.level > level) &&
-          renderManagementTree(members, level + 1)}
-      </>
-    );
-  };
+    const checkScroll = () => {
+      if (element) {
+        const { scrollLeft, scrollWidth, clientWidth } = element;
+        setShowLeftArrow(scrollLeft > 0);
+        setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
+      }
+    };
 
-  const renderMemberList = (members) => {
-    const regularMembers = members.filter((member) => member.role === "member");
-    return (
-      <ul className="member-list multi-column">
-        {regularMembers.map((member) => (
-          <li key={member.id} className="member-list-item">
-            {member.name}
-          </li>
-        ))}
-      </ul>
-    );
+    checkScroll();
+
+    if (element) {
+      element.addEventListener("scroll", checkScroll);
+    }
+
+    window.addEventListener("resize", checkScroll);
+
+    return () => {
+      if (element) {
+        element.removeEventListener("scroll", checkScroll);
+      }
+      window.removeEventListener("resize", checkScroll);
+    };
+  }, []);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { clientWidth } = scrollRef.current;
+      const scrollAmount =
+        direction === "left" ? -clientWidth / 2 : clientWidth / 2;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
   };
 
   return (
-    <section className="team-section">
-      <div className="management-container">
-        <h2 className="section-title-h2">Yönetim Kadrosu</h2>
-        <div className="management-tree">
-          {renderManagementTree(
-            team.filter((member) => member.role === "management")
-          )}
+    <div className="team-section">
+      <h2 className="section-title-h2">Ekiplerimiz</h2>
+
+      <div className="team-scroll-wrapper">
+        {showLeftArrow && (
+          <button
+            className="team-scroll-button left"
+            onClick={() => scroll("left")}
+            aria-label="Scroll left"
+          >
+            &lt;
+          </button>
+        )}
+
+        <div className="team-scroll-row" ref={scrollRef}>
+          {teamData.map((team, index) => (
+            <div className="team-card" key={index}>
+              <h3 className="team-title">{team.teamName}</h3>
+              <div className="team-captain">
+                <p className="captain-name">
+                  <strong>{team.captain.name}</strong>
+                </p>
+                <p className="captain-duty">{team.captain.duty}</p>
+                <p className="captain-mail">
+                  <a href={`mailto:${team.captain.mail}`}>
+                    {team.captain.mail}
+                  </a>
+                </p>
+              </div>
+              <div className="team-members">
+                {team.members.map((member, idx) => (
+                  <div className="member-card" key={idx}>
+                    <p className="member-name">{member.name}</p>
+                    <p className="member-duty">{member.duty}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
+
+        {showRightArrow && (
+          <button
+            className="team-scroll-button right"
+            onClick={() => scroll("right")}
+            aria-label="Scroll right"
+          >
+            &gt;
+          </button>
+        )}
       </div>
-      <div className="members-container">
-        <h2 className="section-title-h2">Üyelerimiz</h2>
-        {renderMemberList(team)}
-      </div>
-    </section>
+    </div>
   );
 }
 

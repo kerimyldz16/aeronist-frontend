@@ -1,12 +1,10 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // 👈 Tailwind scans all these files
+  ],
   theme: {
-    extend: {
-      colors: {
-        darkBlue: "#0a192f", // Genel arka plan için
-        lightBlue: "#3f83f8", // Vurgular ve düğmeler için
-        softWhite: "#e5e7eb", // Metin ve başlık vurguları için
-      },
-    },
+    extend: {},
   },
+  plugins: [],
 };

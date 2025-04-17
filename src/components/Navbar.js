@@ -2,61 +2,63 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 import logo from "../assets/logo.jpg";
+import logof from "../assets/B-Logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isAboutMenuOpen, setIsAboutMenuOpen] = useState(false);
+  const [isKadromuzExpanded, setIsKadromuzExpanded] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
   const location = useLocation();
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 768);
+    };
+
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(isLargeScreen ? window.scrollY > 50 : true);
     };
 
     const handleClickOutside = (event) => {
-      if (!event.target.closest(".about-menu") && isAboutMenuOpen) {
+      if (!event.target.closest(".about-menu")) {
         setIsAboutMenuOpen(false);
+        setIsKadromuzExpanded(false);
       }
-      if (!event.target.closest(".navbar-container") && isOpen) {
+      if (!event.target.closest(".navbar-container")) {
         setIsOpen(false);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
     document.addEventListener("mousedown", handleClickOutside);
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isAboutMenuOpen, isOpen]);
+  }, [isAboutMenuOpen, isKadromuzExpanded, isOpen, isLargeScreen]);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const toggleAboutMenu = () => {
-    setIsAboutMenuOpen(!isAboutMenuOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleAboutMenu = () => setIsAboutMenuOpen(!isAboutMenuOpen);
+  const toggleKadromuzSub = () => setIsKadromuzExpanded(!isKadromuzExpanded);
 
   const handleLogoClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const logoToShow = isScrolled ? logof : logo;
 
   return (
     <nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={handleLogoClick}>
           <img
-            src={logo}
+            src={logoToShow}
             alt="Aeronist Aerospace"
             className={`navbar-logo-img ${isScrolled ? "scrolled" : ""}`}
           />
@@ -82,20 +84,60 @@ function Navbar() {
                   className={`menu-option ${
                     location.pathname === "/tarihcemiz" ? "active" : ""
                   }`}
+                  onClick={() => {
+                    setIsAboutMenuOpen(false);
+                    setIsKadromuzExpanded(false);
+                    setIsOpen(false);
+                  }}
                 >
                   Tarihçemiz
                 </Link>
-                <Link
-                  to="/kadromuz"
-                  className={`menu-option ${
-                    location.pathname === "/kadromuz" ? "active" : ""
-                  }`}
-                >
+
+                <button className="submenu-toggle" onClick={toggleKadromuzSub}>
                   Kadromuz
-                </Link>
+                  <span
+                    className={`about-arrow ${
+                      isKadromuzExpanded ? "open" : ""
+                    }`}
+                  >
+                    &#9660;
+                  </span>
+                </button>
+
+                {isKadromuzExpanded && (
+                  <>
+                    <Link
+                      to="/yonetim-kurulu"
+                      className={`menu-option ${
+                        location.pathname === "/yonetim-kurulu" ? "active" : ""
+                      }`}
+                      onClick={() => {
+                        setIsAboutMenuOpen(false);
+                        setIsKadromuzExpanded(false);
+                        setIsOpen(false);
+                      }}
+                    >
+                      Yönetim Kurulu
+                    </Link>
+                    <Link
+                      to="/ekiplerimiz"
+                      className={`menu-option ${
+                        location.pathname === "/ekiplerimiz" ? "active" : ""
+                      }`}
+                      onClick={() => {
+                        setIsAboutMenuOpen(false);
+                        setIsKadromuzExpanded(false);
+                        setIsOpen(false);
+                      }}
+                    >
+                      Ekiplerimiz
+                    </Link>
+                  </>
+                )}
               </div>
             )}
           </div>
+
           <Link
             to="/projelerimiz"
             className={`menu-item ${

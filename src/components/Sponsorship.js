@@ -5,25 +5,26 @@ import sponsorshipFile from "../assets/sponsorship.pdf";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaDownload } from "react-icons/fa";
-import elm1 from "../assets/Sponsors/roketsan.jpg";
-import elm2 from "../assets/Sponsors/iu.jpg";
-import elm3 from "../assets/Sponsors/eker.jpg";
-import pla1 from "../assets/Sponsors/ahmet.jpg";
-import pla2 from "../assets/Sponsors/vg.png";
-import alt1 from "../assets/Sponsors/prodigma.jpg";
-import alt2 from "../assets/Sponsors/ekom.jpg";
-import alt3 from "../assets/Sponsors/promakim.jpg";
-import alt4 from "../assets/Sponsors/komp.jpg";
-import des1 from "../assets/Sponsors/poliya.jpg";
-import des2 from "../assets/Sponsors/sora.jpg";
-import des3 from "../assets/Sponsors/filetto.jpg";
-import des4 from "../assets/Sponsors/wurthe.jpg";
-import des5 from "../assets/Sponsors/makser.jpg";
-import des6 from "../assets/Sponsors/fymakine.jpg";
-import des7 from "../assets/Sponsors/ari.jpg";
-import des8 from "../assets/Sponsors/kologlu.jpg";
-import des9 from "../assets/Sponsors/dinamik.jpg";
-
+import roketsan from "../assets/Sponsors/roketsan.jpg";
+import istuni from "../assets/Sponsors/iu.jpg";
+import eker from "../assets/Sponsors/eker.jpg";
+import ahmet from "../assets/Sponsors/ahmet.jpg";
+import vg from "../assets/Sponsors/vg.png";
+import prodigma from "../assets/Sponsors/prodigma.jpg";
+import ekom from "../assets/Sponsors/ekom.jpg";
+import promakim from "../assets/Sponsors/promakim.jpg";
+import komp from "../assets/Sponsors/komp.jpg";
+import poliya from "../assets/Sponsors/poliya.jpg";
+import sora from "../assets/Sponsors/sora.jpg";
+import filetto from "../assets/Sponsors/filetto.png";
+import wurthe from "../assets/Sponsors/wurthe.jpg";
+import makser from "../assets/Sponsors/makser.jpg";
+import fymakine from "../assets/Sponsors/fymakine.jpg";
+import ari from "../assets/Sponsors/ari.jpg";
+import kologlu from "../assets/Sponsors/kologlu.jpg";
+import dinamik from "../assets/Sponsors/dinamik.jpg";
+import özdisan from "../assets/Sponsors/özdisan.png";
+import metatech from "../assets/Sponsors/metatech.jpg";
 const Sponsorship = () => {
   const sliderSettings = {
     dots: false,
@@ -60,80 +61,39 @@ const Sponsorship = () => {
         Aeronist Aerospace Sponsorluk Dosyası <FaDownload />
       </a>
 
-      <div className="sponsor-categories">
-        <h3>Elmas Sponsorlarımız</h3>
-        <div className="elmas-sponsors desktop-only">
-          {[elm1, elm2, elm3].map((sponsor, index) => (
-            <div key={index} className="sponsor-card no-bg">
-              <img
-                src={sponsor}
-                alt="Elmas Sponsor"
-                className="sponsor-logo small-logo"
-              />
-            </div>
-          ))}
-        </div>
-        <div className="mobile-only">
-          <Slider {...sliderSettings}>
-            {[elm1, elm2, elm3].map((sponsor, index) => (
-              <div key={index} className="sponsor-card no-bg">
-                <img
-                  src={sponsor}
-                  alt="Elmas Sponsor"
-                  className="sponsor-logo small-logo"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-
-      <div className="sponsor-categories">
-        <h3>Platin Sponsorlarımız</h3>
-        <div className="platin-sponsors desktop-only">
-          {[pla1, pla2].map((sponsor, index) => (
-            <div key={index} className="sponsor-card no-bg">
-              <img
-                src={sponsor}
-                alt="Platin Sponsor"
-                className="sponsor-logo small-logo"
-              />
-            </div>
-          ))}
-        </div>
-        <div className="mobile-only">
-          <Slider {...sliderSettings}>
-            {[pla1, pla2].map((sponsor, index) => (
-              <div key={index} className="sponsor-card no-bg">
-                <img
-                  src={sponsor}
-                  alt="Platin Sponsor"
-                  className="sponsor-logo small-logo"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-
-      <h3>Altın Sponsorlarımız</h3>
+      <h3>Destekçilerimiz</h3>
       <Slider {...sliderSettings}>
-        {[alt1, alt2, alt3, alt4].map((sponsor, index) => (
-          <div key={index} className="sponsor-card no-bg">
-            <img src={sponsor} alt="Sponsor" className="sponsor-logo" />
-          </div>
-        ))}
-      </Slider>
-
-      <h3 className="support">Destekçilerimiz</h3>
-      <Slider {...sliderSettings}>
-        {[des1, des2, des3, des4, des5, des6, des7, des8, des9].map(
+        {[filetto, ekom, wurthe, komp, özdisan, metatech].map(
           (sponsor, index) => (
             <div key={index} className="sponsor-card no-bg">
-              <img src={sponsor} alt="Destekçi" className="sponsor-logo" />
+              <img src={sponsor} alt="Sponsor" className="sponsor-logo" />
             </div>
           )
         )}
+      </Slider>
+
+      <h3 className="support">Geçmiş Destekçilerimiz</h3>
+      <Slider {...sliderSettings}>
+        {[
+          ahmet,
+          ari,
+          dinamik,
+          eker,
+          fymakine,
+          istuni,
+          kologlu,
+          makser,
+          poliya,
+          prodigma,
+          promakim,
+          roketsan,
+          sora,
+          vg,
+        ].map((sponsor, index) => (
+          <div key={index} className="sponsor-card no-bg">
+            <img src={sponsor} alt="Destekçi" className="sponsor-logo" />
+          </div>
+        ))}
       </Slider>
     </div>
   );

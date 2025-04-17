@@ -19,7 +19,7 @@ const ContactInfo = () => {
         <div className="contact-detail">
           <FaPhoneAlt className="contact-icon" />
           <p>
-            Telefon: <a href="tel:+901234567890">+90 123 456 7890</a>
+            Telefon: <a href="tel:+905387350461">+90 538 735 04 61</a>
           </p>
         </div>
         <div className="contact-detail">

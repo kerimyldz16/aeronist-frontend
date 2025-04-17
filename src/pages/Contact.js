@@ -7,8 +7,8 @@ function Contact() {
   return (
     <>
       <div className="contact-page">
-        <Sponsorship />
         <ContactInfo />
+        <Sponsorship />
       </div>
     </>
   );

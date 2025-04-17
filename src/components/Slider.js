@@ -6,6 +6,7 @@ import "../styles/Slider.css";
 import img3 from "../assets/HomePage/slide/ekip1.jpg";
 import img1 from "../assets/HomePage/slide/ekip2.jpg";
 import img2 from "../assets/HomePage/slide/ekip3.jpg";
+import img4 from "../assets/HomePage/slide/ekip4.jpg";
 
 function SliderComponent() {
   const settings = {
@@ -34,13 +35,16 @@ function SliderComponent() {
     <section className="slider-component">
       <Slider {...settings}>
         <div className="slide">
-          <img src={img1} alt="Slide 1" className="slide-img" />
+          <img src={img4} alt="Slide 1" className="slide-img" />
         </div>
         <div className="slide">
           <img src={img2} alt="Slide 2" className="slide-img" />
         </div>
         <div className="slide">
           <img src={img3} alt="Slide 3" className="slide-img" />
+        </div>
+        <div className="slide">
+          <img src={img1} alt="Slide 4" className="slide-img" />
         </div>
       </Slider>
     </section>

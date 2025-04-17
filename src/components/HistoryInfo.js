@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import "../styles/History.css";
+import "../styles/HistoryInfo.css";
 import image1 from "../assets/HomePage/News/idef.jpg";
-import image2 from "../assets/HomePage/News/idef2.jpg";
+import image2 from "../assets/History/hist2.jpg";
 
 function HistoryInfo() {
   const image1Ref = useRef(null);
@@ -40,18 +40,16 @@ function HistoryInfo() {
           <div className="history-text">
             <h3 className="history-text-title">İlk Adımlarımız</h3>
             <p>
-              Aeronist Aerospace, ulusal ve uluslararası arenada yer almak
-              amacıyla, havacılık ve uzay teknolojilerine ilgi duyan
-              öğrencilerin girişimleriyle kurulmuştur. Temel hedefimiz, ülkemizi
-              en iyi şekilde temsil ederek teknolojiyi daha ileri taşımaktır.
-              Aeronist Aerospace, ulusal ve uluslararası arenada yer almak
-              amacıyla, havacılık ve uzay teknolojilerine ilgi duyan
-              öğrencilerin girişimleriyle kurulmuştur. Temel hedefimiz, ülkemizi
-              en iyi şekilde temsil ederek teknolojiyi daha ileri taşımaktır.
-              Aeronist Aerospace, ulusal ve uluslararası arenada yer almak
-              amacıyla, havacılık Aeronist Aerospace, ulusal ve uluslararası
-              arenada yer almak amacıyla, havacılık ve uzay teknolojilerine ilgi
-              duyan öğrencilerin girişimler
+              2018 yılında çeşitli dallardan bir grup mühendislik öğrencisi
+              tarafından, İstanbul Üniversitesi-Cerrahpaşa Mühendislik Fakültesi
+              bünyesinde Havacılık ve Uzay Kulübü olarak kurulan kulübümüz,
+              havacılık ve uzay teknolojilerine ilgi duyan öğrencileri bir araya
+              getirerek bu alanda projeler geliştirmek amacıyla yola çıktı.
+              Kuruluşumuzdan itibaren, mühendislik disiplinlerini pratiğe
+              dökerek öğrenci gelişimini desteklemeyi ve ulusal ile uluslararası
+              arenada üniversitemizi ve milletimizi en iyi şekilde temsil etmeyi
+              hedefliyoruz. Havacılık, uzay ve savunma sanayii alanlarında katkı
+              sağlamak için çalışmalarımıza kararlılıkla devam ediyoruz.
             </p>
           </div>
           <img
@@ -66,17 +64,23 @@ function HistoryInfo() {
           <div className="history-text">
             <h3 className="history-text-title">Başarılarla Dolu Yıllar</h3>
             <p>
-              Geçen yıllar içinde pek çok projede yer alarak, yüksek başarılar
-              elde ettik. Takım ruhuyla ilerlediğimiz bu yolda, yerli ve milli
-              üretime destek sağlamak için çalışmalarımıza devam ediyoruz.
-              Aeronist Aerospace, ulusal ve uluslararası arenada yer almak
-              amacıyla, havacılık ve uzay teknolojilerine ilgi duyan
-              öğrencilerin girişimleriyle kurulmuştur. Temel hedefimiz, ülkemizi
-              en iyi şekilde temsil ederek teknolojiyi daha ileri taşımaktır.
-              Aeronist Aerospace, ulusal ve uluslararası arenada yer almak
-              amacıyla, havacılık ve uzay teknolojilerine ilgi duyan
-              öğrencilerin girişimleriyle kurulmuştur. Temel hedefimiz, ülkemizi
-              en iyi şekilde temsil ederek teknolojiyi daha ileri taşımaktır.
+              Kuruluşumuzdan bu yana gökyüzüne ve ötesine uzanan bir yolculuğun
+              içindeyiz. "Gökyüzü sınır değil başlangıçtır." mottosunu her daim
+              iliklerimizde hissediyoruz. Havacılık ve uzay tutkusu ile bir
+              araya gelen kulübümüz, sınırları zorlayan projelere imza atarak
+              yıllar boyu mühendislik yetkinliklerini sahaya taşıdı ve taşımaya
+              devam ediyor. Roket ve insansız hava aracı (İHA) takımlarımız
+              TEKNOFEST yarışmalarına katılarak çeşitli dereceler ve başarılar
+              elde etti. Her geçen yıl daha büyük hedeflerle ilerliyor, teknik
+              bilgimizi pratiğe dökerek kendimizi geliştiriyoruz. Bu yıl su altı
+              roket ve hava savunma projelerini de bünyemize katarak, farklı
+              alanlarda da yetkinlik kazanmayı hedefliyoruz. Aynı zamanda
+              Uluslararası Roket Yarışması (IREC)'na katılarak kulüp kuruluş
+              amacımız doğrultusunda, Türkiye'yi temsil edecek olmanın
+              gururuyla, büyük bir adım atıyoruz. Azim ve takım ruhuyla
+              çıktığımız bu yolda, büyük bir aile samimiyetiyle çalışmalarımıza
+              devam ederek ülkemizi en iyi şekilde temsil etmeye ve teknolojiyi
+              ileri taşımaya devam edeceğiz.
             </p>
           </div>
           <img

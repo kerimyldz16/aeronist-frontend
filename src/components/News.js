@@ -1,27 +1,42 @@
 import React from "react";
 import "../styles/News.css";
-import idefImage1 from "../assets/HomePage/News/idef.jpg";
-import idefImage2 from "../assets/HomePage/News/idef2.jpg";
+import newsImage from "../assets/HomePage/News/news.jpg";
+import newsVideo from "../assets/HomePage/News/NEWS.mov";
 
 function News() {
   return (
     <div className="news-section">
-      <h2 className="news-title">IDEF, Uluslararası Savunma Sanayii Fuarı</h2>
+      <h2 className="news-title">TEKNOFEST 2024 AKDENİZ</h2>
       <p className="news-content">
-        IDEF, Uluslararası Savunma Sanayii Fuarı, Türkiye Cumhuriyeti
-        Cumhurbaşkanlığı himayelerinde, Milli Savunma Bakanlığı ev sahipliğinde,
-        Türk Silahlı Kuvvetlerini Güçlendirme Vakfı yönetim ve sorumluluğunda,
-        TÜYAP Tüm Fuarcılık Yapım A.Ş. organizatörlüğünde konunun uzmanlarına
-        yönelik gerçekleştirilen bir fuardır.
+        Teknofest 2024'te, Adana'da yüksek irtifa roketimizi sergileyerek
+        havacılık ve uzay tutkunlarıyla buluştuk. Roketimizin her detayı
+        ziyaretçiler tarafından büyük ilgiyle incelendi; tasarımından uçuş
+        dinamiklerine kadar merak edilen her soruyu yanıtladık. Ekibimizin
+        aylarca süren emeğinin karşılığını görmek, Türkiye'nin uzay
+        teknolojilerine olan ilgisini hissetmek bizim için büyük bir gururdu. Bu
+        eşsiz atmosferde, geleceğin mühendisleriyle buluşmak ve onlara ilham
+        vermek unutulmaz bir deneyimdi.
       </p>
       <p className="news-content">
-        Dünyanın en büyük 4 savunma sanayii fuarından biri olan ve Türk Savunma
-        Sanayii ürünlerinin vitrine çıktığı IDEF, Uluslararası Savunma Sanayii
-        Fuarı'nda Aeronist Aerospace olarak yerimizi aldık.
+        Festival boyunca yalnızca roketimizi sergilemekle kalmadık, aynı zamanda
+        T3 Vakfı gönüllüsü, başkanımız Enes Balçın öncülüğünde Astronomi ve
+        Havacılık Atölyesi'nde çocuklarla bir araya geldik. Minik ellerin
+        tasarladığı roket modelleri, onların uzaya olan hayallerini
+        yansıtıyordu. Bilimi eğlenceyle harmanlayan atölyemizde, çocukların
+        gözlerindeki heyecanı görmek bizi daha da motive etti. Geleceğin
+        mühendislerine ve bilim insanlarına ilham olabilmek, Teknofest 2024'teki
+        en büyük başarımız oldu!
       </p>
-      <div className="news-images">
-        <img src={idefImage1} alt="IDEF Fuarı 1" className="news-image" />
-        <img src={idefImage2} alt="IDEF Fuarı 2" className="news-image" />
+      <div className="news-media">
+        <img
+          src={newsImage}
+          alt="Teknofest 2024 Akdeniz"
+          className="news-image"
+        />
+        <video controls className="news-video">
+          <source src={newsVideo} type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
       </div>
     </div>
   );

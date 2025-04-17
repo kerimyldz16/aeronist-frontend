@@ -37,3 +37,34 @@
   align-items: stretch;
   justify-items: center;
 }
+.projects-tools {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-search-bar {
+  padding: 0.6rem 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+  width: 160px;
+}
+
+.project-search-bar::placeholder {
+  color: #bbb;
+}
+
+.project-filter-dropdown {
+  padding: 0.6rem 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
