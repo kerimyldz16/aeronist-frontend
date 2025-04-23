@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
-import logo from "../assets/logo.jpg";
-import logof from "../assets/B-Logo.png";
-
+import logo from "../assets/B-Logo.png";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,18 +49,24 @@ function Navbar() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const logoToShow = isScrolled ? logof : logo;
+  const logoToShow = isScrolled ? logo : logo;
 
   return (
     <nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={handleLogoClick}>
-          <img
-            src={logoToShow}
-            alt="Aeronist Aerospace"
-            className={`navbar-logo-img ${isScrolled ? "scrolled" : ""}`}
-          />
-        </Link>
+        <div className="navbar-left">
+          <Link to="/" className="navbar-logo" onClick={handleLogoClick}>
+            <img
+              src={logoToShow}
+              alt="Aeronist Aerospace"
+              className={`navbar-logo-img ${isScrolled ? "scrolled" : ""}`}
+            />
+          </Link>
+          <span className="navbar-title">
+            İstanbul Üniversitesi Cerrahpaşa Havacılık ve Uzay Kulübü
+          </span>
+        </div>
+
         <button
           className={`menu-toggle ${isOpen ? "open" : ""}`}
           onClick={toggleMenu}

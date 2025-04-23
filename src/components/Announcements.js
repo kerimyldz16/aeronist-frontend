@@ -56,7 +56,7 @@ function Announcements() {
       </div>
 
       <div className="announcements-footer">
-        <Link to="/announcements" className="view-all-link">
+        <Link to="/duyurular" className="view-all-link">
           Tümünü Gör →
         </Link>
       </div>

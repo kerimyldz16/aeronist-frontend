@@ -39,6 +39,7 @@
   margin-left: 0.5rem;
   height: 80px;
   transition: height 0.3s ease;
+  transform: scale(1.5);
 }
 
 .navbar-logo-img.scrolled {
@@ -79,6 +80,7 @@
   font-weight: 600;
   transition: color 0.3s ease, font-weight 0.3s ease, font-size 0.3s ease;
   position: relative;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .menu-item:hover {
@@ -110,6 +112,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .about-options {
@@ -206,4 +209,24 @@
   position: static;
   padding-top: 0.5rem;
   margin-left: 1rem;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navbar-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  max-width: 600px;
+  line-height: 1.4;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-title {
+    display: none;
+  }
 }
