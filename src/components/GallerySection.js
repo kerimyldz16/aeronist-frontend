@@ -4,13 +4,17 @@ import "../styles/GallerySection.css";
 import img1 from "../assets/HomePage/gallery/gallery1.jpg";
 import img2 from "../assets/HomePage/gallery/gallery2.jpg";
 import img3 from "../assets/HomePage/gallery/gallery3.jpg";
-
+import img4 from "../assets/HomePage/gallery/gallery4.jpg";
+import img5 from "../assets/HomePage/gallery/gallery5.jpg";
+import img6 from "../assets/HomePage/gallery/gallery6.jpg";
+import img7 from "../assets/HomePage/gallery/gallery7.jpg";
+import img8 from "../assets/HomePage/gallery/gallery8.jpg";
 function GallerySection() {
   const scrollRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(false);
   const [modalIndex, setModalIndex] = useState(null);
-  const images = [img1, img2, img3, img3, img3, img3];
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8];
   const [touchStartX, setTouchStartX] = useState(null);
 
   useEffect(() => {

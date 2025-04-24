@@ -1,6 +1,6 @@
 [
   {
-    "teamName": "AERONIST AEROSPACE ORTA İRTİFA ROKET TAKIMI",
+    "teamName": "AERONİST AEROSPACE ORTA İRTİFA ROKET TAKIMI",
     "captain": {
       "name": "Elif Çin",
       "duty": "Takım Kaptanı",
@@ -66,7 +66,7 @@
     ]
   },
   {
-    "teamName": "Aeronist SkyPulse HAVA SAVUNMA SİSTEMLERİ TAKIMI",
+    "teamName": "AERONİST SKYPULSE HAVA SAVUNMA SİSTEMLERİ TAKIMI",
     "captain": {
       "name": "Öykü İlkem Gürten",
       "duty": "Takım Kaptanı",
@@ -103,10 +103,6 @@
       },
       {
         "name": "Abdülkerim Yıldız",
-        "duty": "Yazılım"
-      },
-      {
-        "name": "Melike İşeri",
         "duty": "Yazılım"
       },
       {
@@ -268,10 +264,6 @@
         "duty": "Elektronik"
       },
       {
-        "name": "Güray Ergün",
-        "duty": "Elektronik"
-      },
-      {
         "name": "İsmail Karaynir",
         "duty": "Mekanik"
       },
@@ -290,7 +282,7 @@
     ]
   },
   {
-    "teamName": "Sosyal Medya Ekibi",
+    "teamName": "SOSYAL MEDYA EKİBİ",
     "captain": {
       "name": "Havin Naz Bakırcıoğlu",
       "duty": "Sosyal Medya Ekip Lideri",

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Roket Test Çalışmaları",
+    "name": "ROKET TEST ÇALIŞMALARI",
     "year": "2023",
     "image": "/Projects-Image/gallery1.jpg",
     "description": "Aeronist Aerospace olarak, uzay araştırmaları için geliştirdiğimiz roket motorlarının testlerini gerçekleştiriyoruz. Bu testler sırasında roketin itiş gücü ve diğer teknik özellikleri analiz ediliyor.",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Simulasyon Eğitimi",
+    "name": "SİMÜLASYON EĞİTİMİ",
     "year": "2024",
     "image": "/Projects-Image/gallery2.jpg",
     "description": "Havacılık ve uzay mühendisliği öğrencileri için geliştirdiğimiz özel simülasyon eğitimleri ile gerçek zamanlı uçuş deneyimi sağlıyoruz. Bu eğitimler, öğrencilere temel uçuş bilgileri kazandırmayı amaçlıyor.",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "name": "Uydu Montaj ve Test Aşamaları",
+    "name": "UYDU MONTAJ VE TEST AŞAMALARI",
     "year": "2023",
     "image": "/Projects-Image/gallery3.jpg",
     "description": "Kendi geliştirdiğimiz küçük uydu prototiplerinin montaj ve test aşamalarını tamamlıyoruz. Bu süreçte kullanılan teknikler ve test prosedürleri ile gelecekteki uzay görevlerine yönelik hazırlık yapıyoruz.",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "name": "Yarışma Hazırlıkları",
+    "name": "YARIŞMA HAZIRLIKLARI",
     "year": "2021",
     "image": "/Projects-Image/idef.jpg",
     "description": "Üniversite öğrencileri ile birlikte katıldığımız uluslararası yarışmalara yönelik hazırlık süreçlerimizi tamamlıyoruz. Bu yarışmalar kapsamında geliştirdiğimiz yenilikçi projeler ile öncü rol üstlenmeyi amaçlıyoruz.",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "name": "Robotik Kol Geliştirme",
+    "name": "ROBOTİK KOL GELİŞTİRME",
     "year": "2022",
     "image": "/Projects-Image/idef2.jpg",
     "description": "Uzay görevlerinde kullanılmak üzere geliştirdiğimiz robotik kolun prototip çalışmalarını tamamlıyoruz. Bu robotik kol, uzay araçları üzerinde bakım ve onarım yapabilecek şekilde tasarlanmıştır.",

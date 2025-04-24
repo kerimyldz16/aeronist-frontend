@@ -89,9 +89,10 @@
 .grid-item h3 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.6rem;
-  color: #f1f1f1;
+  color: #bfa357;
   margin-bottom: 0.75rem;
   letter-spacing: 0.5px;
+  margin-top: 1.2rem;
 }
 
 .grid-item p {

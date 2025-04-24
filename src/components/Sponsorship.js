@@ -25,7 +25,8 @@ import kologlu from "../assets/Sponsors/kologlu.jpg";
 import dinamik from "../assets/Sponsors/dinamik.jpg";
 import özdisan from "../assets/Sponsors/özdisan.png";
 import metatech from "../assets/Sponsors/metatech.jpg";
-
+import ebyte from "../assets/Sponsors/ebyte.jpg";
+import tekyaz from "../assets/Sponsors/tekyaz.jpg";
 const Sponsorship = () => {
   const sliderSettings = {
     dots: false,
@@ -62,9 +63,9 @@ const Sponsorship = () => {
         Sponsorluk Dosyamızı İndirin <FaDownload />
       </a>
 
-      <h3>Destekçilerimiz</h3>
+      <h3>DESTEKÇİLERİMİZ</h3>
       <Slider {...sliderSettings}>
-        {[filetto, ekom, wurthe, komp, özdisan, metatech].map(
+        {[filetto, ekom, wurthe, komp, özdisan, metatech, ebyte, tekyaz].map(
           (sponsor, index) => (
             <div key={index} className="sponsor-card">
               <img
@@ -77,7 +78,7 @@ const Sponsorship = () => {
         )}
       </Slider>
 
-      <h3 className="support">Geçmiş Destekçilerimiz</h3>
+      <h3 className="support">GEÇMİŞ DESTEKÇİLERİMİZ</h3>
       <Slider {...sliderSettings}>
         {[
           ahmet,
